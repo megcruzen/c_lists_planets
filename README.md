@@ -1,4 +1,5 @@
-## C# List Practice with Strings
+## Practice: Planets
+### C# List Practice with Strings
 https://github.com/nashville-software-school/bangazon-inc/blob/master/book-1-orientation/chapters/DATA_STRUCTURES_LIST.md
 
 ### Instructions
