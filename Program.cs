@@ -5,6 +5,12 @@ namespace planets
 {
     class Program
     {
+        static void planetPrinter(List<string> stringList){
+            foreach(string item in stringList){
+                Console.WriteLine(item);
+            }
+        }
+
         static void Main(string[] args)
         {
             List<string> planetList = new List<string>(){"Mercury", "Mars"};
@@ -15,6 +21,10 @@ namespace planets
             planetList.Add("Saturn");
 
             planetList.ForEach(planet => Console.WriteLine(planet));
+
+            foreach(string planet in planetList) {
+                Console.Write(planet);
+            }
 
             Console.WriteLine();
 
@@ -57,7 +67,9 @@ namespace planets
             // 7. Being good amateur astronomers, we know that Pluto is now a dwarf planet, so use the Remove() method to eliminate it from the end of planetList.
 
             planetList.Remove("Pluto");
-            planetList.ForEach(planet => Console.WriteLine(planet));
+            // planetList.ForEach(planet => Console.WriteLine(planet));
+
+            planetPrinter(planetList);
 
         }
     }
